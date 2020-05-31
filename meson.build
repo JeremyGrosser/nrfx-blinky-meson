@@ -32,7 +32,6 @@ nrfx_sources = files([
   'nrfx/drivers/src/nrfx_spi.c',
   'nrfx/drivers/src/nrfx_spim.c',
   'nrfx/drivers/src/nrfx_spis.c',
-  'nrfx/drivers/src/nrfx_swi.c',
   'nrfx/drivers/src/nrfx_systick.c',
   'nrfx/drivers/src/nrfx_timer.c',
   'nrfx/drivers/src/nrfx_twi.c',

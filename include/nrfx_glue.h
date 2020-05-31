@@ -55,6 +55,7 @@ extern "C" {
  */
 
 #include <soc/nrfx_irqs.h>
+#include <soc/nrfx_coredep.h>
 
 //------------------------------------------------------------------------------
 
@@ -178,9 +179,7 @@ static inline bool _NRFX_IRQ_IS_PENDING(IRQn_Type irq_number)
  */
 #define NRFX_DELAY_DWT_BASED 0
 
-#include <time.h>
-
-#define NRFX_DELAY_US(us_time) nanosleep(us_time)
+#define NRFX_DELAY_US(us_time) nrfx_coredep_delay_us(us_time)
 
 //------------------------------------------------------------------------------
 
